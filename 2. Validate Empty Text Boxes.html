@@ -1,0 +1,62 @@
+
+
+<!--2. Create a HTML form that has number of Textboxes. When the form runs in the Browser fill the textboxes with data.
+Write JavaScript code that verifies that all textboxes has been filled.
+If a textboxes has been left empty, popup an alert indicating which textbox has been left empty. -->
+
+<html>
+<head>
+
+<script>
+function validate()
+{
+if(document.getElementById('uid').value.length==0)
+alert("UserId can't be blank");
+else if(document.getElementById('pwd').value.length==0)
+alert("Password can't be blank");
+else
+{
+alert("successfully logged in");
+}}
+</script>
+
+
+</head>
+<body bgcolor="red">
+
+<table>
+
+<tr>
+<td>
+ <label>USER NAME</label>
+</td>
+<td>
+<input type="text" id="uid">
+</td>
+</tr>
+
+
+<tr>
+<td>
+ <label>PASSWORD</label>
+</td>
+<td>
+<input type="password" id="pwd">
+</td>
+</tr>
+
+<tr>
+<td>
+<label> &nbsp </label> 
+</td>
+<td>
+<input type ="button" onclick="validate()" value ="LogIn">
+</td>
+</tr>
+
+
+</table>
+
+</body>
+
+</html>

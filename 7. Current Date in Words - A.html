@@ -1,0 +1,40 @@
+
+<!-- 7A.	Write a JavaScript code block using arrays and generate the current date in words, 
+this should include the day, month and year. -->
+
+<html>
+<head>
+<title> Current Date in Words </title>
+
+<script type="text/javascript">
+var mydate=new Date()
+var year=mydate.getFullYear()
+var years="(Two Thousand and Thirteen)";
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+
+var dayarray=new Array
+("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+
+var montharray=new Array
+("January","February","March","April","May","June","July","August","Septemb er",
+"October","November","December")
+
+var daysarray=new Array
+("One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven ",
+"Twelve","Thirteen");
+
+// you must type upto “Thirtyfirst”
+
+
+document.write("<b>"+dayarray[day]+", "+montharray[month]+", "+daysarray[daym-1] +"("+daym+"), "+year+years+"</b>")
+
+</script>
+
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+
+
+<!-- 6B.	Write a JavaScript code to find factorial of N. 
+(Use recursive function). -->
+
+<html>
+<head>
+<title> Factorail of a Number </title>
+     
+<script type="text/javascript">
+        function findFactorial()
+         {
+            var num=window.prompt("Enter the value of N : ");    
+            var n=parseInt(num);
+            window.alert("Factorial of "+n+" is "+fact(n));
+         }
+
+         function fact(n)
+         {
+             if(n==0)
+                return 1;
+             else
+                return (n*fact(n-1));
+           }
+
+</script>
+
+</head>
+   
+<body bgcolor="yellow">
+
+   <h1 align="center"> Factorial of a Number </h1>
+   <hr>
+    <center>
+      <form>
+         <input type="button" value="ClickHere"  onclick="findFactorial()">
+      </form>
+    </center>
+	
+</body>
+</html>  

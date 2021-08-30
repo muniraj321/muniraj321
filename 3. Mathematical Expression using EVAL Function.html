@@ -1,0 +1,47 @@
+
+<!--3. Develop a HTML Form, which accepts any Mathematical expression.
+Write JavaScript code to Evaluates the expression and Displays the result.-->
+
+
+<html>
+
+<head>
+<title>Mathematical Expression</title>
+
+<script type = "text/javascript">
+    function math_exp()
+    {
+        var x = document.form1.exptext.value;
+        var result = eval(x);
+        document.form1.resultbox.value = result;
+    }
+</script>
+
+</head>
+
+<body bgcolor="yellow">
+
+    <form name = "form1">
+        
+		<table>
+            
+			<tr>
+                <td>Mathematical Expression</td>
+                <td><input type = "text" name = "exptext" /></td>
+            </tr>
+            
+			<tr>
+                <td>Result</td>
+                <td><input type = "text" name = "resultbox" /></td>
+            </tr>
+			
+            <tr>
+                <td><input type = "button" value = "calculate" onclick = "math_exp()" /></td>
+            </tr>
+			
+        </table>
+		
+    </form>
+
+</body>
+</html>
