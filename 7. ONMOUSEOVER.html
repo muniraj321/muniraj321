@@ -1,0 +1,58 @@
+
+<!--Create a web page using two image files, which switch between one another 
+as the mouse pointer moves over the images. Use the on Mouse Over and on Mouse Out -->
+
+<html>
+<head>
+<title>Mouse over and mouse out</title>
+
+
+<style type ="text/css">
+#image1
+{
+position:absolute;
+top:50px;
+left:50px;
+visibility:visible;
+}
+#image2
+{
+position:absolute;
+top:50px;
+left:50px;
+visibility:hidden;
+}
+</style>
+
+<script type ="text/javascript">
+function changeimage()
+{
+var imageone = document.getElementById("image1").style;
+var imagetwo = document.getElementById("image2").style;
+if(imageone.visibility == "visible")
+{
+imageone.visibility = "hidden";
+imagetwo.visibility = "visible";
+}
+else
+{
+imageone.visibility = "visible";
+imagetwo.visibility = "hidden";
+}
+}
+</script>
+
+</head>
+
+
+<body>
+<form>
+
+<img src="sagar.jpg" width="300" height="300" id="image1" 
+onmouseover="changeimage();" onmouseout="changeimage();"></img>
+
+<img src="christ.jpeg" width="300" height="300" id="image2" 
+onmouseover="changeimage();" onmouseout="changeimage();"></img>
+</form>
+</body>
+</html>

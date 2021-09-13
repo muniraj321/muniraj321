@@ -1,0 +1,43 @@
+
+<!-- Write a JavaScript code block, which checks the contents entered in a form’s Text element.
+If the text entered is in the lower case, convert to upper case. Make use of function to Uppercase ( ). -->
+
+
+<html>
+<head>
+<title> upper lower case</title>
+
+<script type="text/javascript">
+
+function makeUppercase()
+{
+document.form1.outstring.value = document.form1.instring.value.toUpperCase();
+}
+
+function makeLowercase()
+{
+document.form1.outstring2.value = document.form1.instring2.value.toLowerCase();
+}
+</script>
+
+</head>
+
+<body>
+
+<form name="form1">
+
+<input type="text" name="instring" value="this is the text string" size="30">
+<input type="button" name="Convert" value="Make Uppercase >>"
+onClick="makeUppercase();">
+<input type="text" name="outstring" value="" size="30"> <br><br><br>
+
+
+<input type="text" name="instring2" value="THIS IS THE TEXT STRING" size="30">
+<input type="button" name="Convert" value="Make Lowercase >>"
+onClick="makeLowercase();">
+<input type="text" name="outstring2" value="" size="30">
+
+</form>
+
+</body>
+</html>
